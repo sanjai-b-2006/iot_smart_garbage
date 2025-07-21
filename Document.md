@@ -1,7 +1,9 @@
 # IoT-Based Smart Waste Management and Sorting System
 
 **Submitted by:** Sanjai B
+
 **Roll No:** EC23B1081
+
 **College:** IIITDM Kancheepuram
 
 ## 1. Problems Solved by the Proposed Solution
