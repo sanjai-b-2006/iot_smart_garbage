@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Sanjai",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp32", "top": 0, "left": 0 },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic", "top": -50, "left": 150 },
+    { "type": "wokwi-hx711", "id": "hx711", "top": 50, "left": 150 },
+    { "type": "wokwi-mq2", "id": "gas_sensor", "top": 120, "left": 150 },
+    { "type": "wokwi-servo", "id": "servo", "top": 100, "left": -150 }
+  ],
+  "connections": [
+    [ "ultrasonic:VCC", "esp32:3V3", "red", [] ],
+    [ "ultrasonic:GND", "esp32:GND", "black", [] ],
+    [ "ultrasonic:TRIG", "esp32:GPIO13", "green", [] ],
+    [ "ultrasonic:ECHO", "esp32:GPIO12", "green", [] ],
+    [ "hx711:VCC", "esp32:3V3", "red", [] ],
+    [ "hx711:GND", "esp32:GND", "black", [] ],
+    [ "hx711:DOUT", "esp32:GPIO26", "green", [] ],
+    [ "hx711:SCK", "esp32:GPIO25", "green", [] ],
+    [ "gas_sensor:VCC", "esp32:3V3", "red", [] ],
+    [ "gas_sensor:GND", "esp32:GND", "black", [] ],
+    [ "gas_sensor:A0", "esp32:GPIO34", "green", [] ],
+    [ "servo:V+", "esp32:3V3", "red", [] ],
+    [ "servo:GND", "esp32:GND", "black", [] ],
+    [ "servo:PWM", "esp32:GPIO14", "green", [] ]
+  ]
+}
