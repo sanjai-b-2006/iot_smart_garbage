@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "author": "Sanjai Funtastic",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 180, "left": 80, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic",
+      "top": 519.9,
+      "left": 53.5,
+      "attrs": { "distance": "93" }
+    },
+    { "type": "wokwi-servo", "id": "servo", "top": 257.2, "left": -153.6, "attrs": {} },
+    { "type": "wokwi-hx711", "id": "hx711", "top": 280, "left": 280, "attrs": {} },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "mq135",
+      "top": 46.7,
+      "left": 182.2,
+      "attrs": { "label": "Gas Sensor" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "redled",
+      "top": 54,
+      "left": 128.6,
+      "attrs": { "color": "red", "label": "Organic" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "greenled",
+      "top": 54,
+      "left": 71,
+      "attrs": { "color": "green", "label": "Recyclable" }
+    }
+  ],
+  "connections": [
+    [ "servo:GND", "uno:GND.1", "black", [ "h182.4", "v-144", "h163.2" ] ],
+    [ "servo:V+", "uno:5V", "green", [ "h192", "v115.3", "h201.6" ] ],
+    [ "servo:PWM", "uno:7", "green", [ "h-9.6", "v-172.6", "h432" ] ],
+    [ "mq135:GND", "uno:GND.1", "black", [ "v19.2", "h-19.2" ] ],
+    [ "mq135:SIG", "uno:A0", "green", [ "v307.2", "h66.8" ] ],
+    [ "ultrasonic:VCC", "uno:5V", "red", [ "v-144", "h115.2" ] ],
+    [ "ultrasonic:GND", "uno:GND.3", "black", [ "v-124.8", "h104.4" ] ],
+    [ "ultrasonic:ECHO", "uno:6", "green", [ "v-134.4", "h373.6", "v-326.4", "h-240" ] ],
+    [ "ultrasonic:TRIG", "uno:5", "green", [ "v-115.2", "h431.6", "v-374.4", "h-278.4" ] ],
+    [ "hx711:GND", "uno:GND.3", "black", [ "h0" ] ],
+    [ "hx711:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "hx711:DT", "uno:8", "green", [ "h0" ] ],
+    [ "hx711:SCK", "uno:9", "green", [ "h0" ] ],
+    [ "greenled:C", "uno:11", "green", [ "v76.8", "h134.8" ] ],
+    [ "greenled:A", "uno:GND.1", "green", [ "v38.4", "h0", "v9.6", "h96" ] ],
+    [ "redled:A", "uno:GND.1", "green", [ "v28.8", "h38.4" ] ],
+    [ "redled:C", "uno:10", "green", [ "v67.2", "h86.8" ] ]
+  ],
+  "dependencies": {}
+}
