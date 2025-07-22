@@ -7,6 +7,7 @@
 **College:** IIITDM Kancheepuram
 
 Updated this video just for reference after hackathon after many times error finally completing full sim : https://drive.google.com/file/d/1yIHFRfSwaywyGicbWOMdXCZT7UVe6xYJ/view
+Updated code after hackathon(wokwi) : https://github.com/sanjai-b-2006/iot_smart_garbage/tree/de286b03cdb712dca4c3e54d2a01da48901fdf44/wokwi_update_code
 
 See document in https://github.com/sanjai-b-2006/iot_smart_garbage/blob/5b0b36707b03e0291d1f9ff6922e34e5a67d7421/Document.md
 
