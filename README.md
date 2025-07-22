@@ -6,6 +6,8 @@
 
 **College:** IIITDM Kancheepuram
 
+Updated this video just for reference after hackathon after many times error finally completing full sim : https://drive.google.com/file/d/1yIHFRfSwaywyGicbWOMdXCZT7UVe6xYJ/view
+
 See document in https://github.com/sanjai-b-2006/iot_smart_garbage/blob/5b0b36707b03e0291d1f9ff6922e34e5a67d7421/Document.md
 
 See explanation videos in https://github.com/sanjai-b-2006/iot_smart_garbage/blob/5b0b36707b03e0291d1f9ff6922e34e5a67d7421/videos
