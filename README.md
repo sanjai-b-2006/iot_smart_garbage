@@ -6,7 +6,7 @@
 
 **College:** IIITDM Kancheepuram
 
-** Everyone are welcomed to give updates or changes in code **
+**Everyone are welcomed to give updates or changes in code**
 
 Updated this video just for reference after hackathon after many times error finally completing full sim : https://drive.google.com/file/d/1yIHFRfSwaywyGicbWOMdXCZT7UVe6xYJ/view
 
